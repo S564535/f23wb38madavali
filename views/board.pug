@@ -9,11 +9,11 @@ block content
   - let cols=Number(query.cols)
 
   if !(Number.isInteger(rows)) || !(Number.isInteger(cols))
-    p incorrect rows or columns
+    p enter integer values
   else if (rows<1) || (rows>10)
-    p rows are out of range
+    p rows are out of range use numbers between 1 to 10
   else if (cols<1) || (cols>10)
-    p cols are out of range
+    p cols are out of range use numbers between 1 to 10
   else
    table#outer
      - for(let i=0; i<rows; i++){
