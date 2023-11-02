@@ -11,3 +11,8 @@ block content
        div.col-sm-2(onclick=`buy(${index})`) #{Elephant.Elephant_weight}
        br
        hr
+    script. 
+        function buy(index)
+        {
+            alert(`you purchased Item ${index+1}`)
+        }
